@@ -3,7 +3,7 @@ https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition
 數據集來自 kaggle競賽：Dogs vs. Cats，訓練集有25000張，貓狗各佔一半。測試集12500張，沒有標註是貓還是狗。
 
 ## 數據預處理 file.py
-由於我們的數據集的檔案名是以type.num.jpg這樣的方式命名的，比如cat.0.jpg，但是使用 Keras 的 ImageDataGenerator 需要將不同種類的圖片分在不同的文件夾中，因此我們需要對數據集進行預處理。這裡我們採取的方向是創建符號鏈接(symbol link)，這樣的好處是不用複製圖片，佔用不必要的空間。
+由於我們的數據集的檔案名是以type.num.jpg這樣的方式命名的，比如cat.0.jpg，但是使用 Keras 的 ImageDataGenerator 需要將不同種類的圖片分在不同的文件夾中，因此我們需要對數據集進行預處理。這裡我們採取的方向是創建符號鏈接(symbol link)，這樣的好處是不用複製圖片，佔用不必要的空間。  
 ├── test [12500 images]  
 ├── test.zip  
 ├── test2  
